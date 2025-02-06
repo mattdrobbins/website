@@ -1,1 +1,3 @@
 _build
+upload.sh
+node_modules

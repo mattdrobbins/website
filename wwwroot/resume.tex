@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{resume} % Use the resume class
+
+\usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\urlstyle{same}
+%------------------------------------------------
+
+\name{Matthew Robbins} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{535 E 14th Street, Apt 3A \\ New York, New York, 10009} % Main address
+\address{(312)~$\cdot$~515~$\cdot$~8790 \\ mattdrobbins@protonmail.com \\ \url{https://ttrobbins.com} } % Contact information
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{center}
+\fontsize{20pt}{20pt}
+\href{https://github.com/mattdrobbins}{\faicon{github}} \ \ \
+\href{https://www.linkedin.com/in/matt-robbins-developer/}{\faicon{linkedin}} 
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+	\begin{rSubsection}{INTL Café}{January 2024 - Present}{CTO  \url{https://intlcafe.io}}{Chicago, IL}
+		\item Lead developer and sole architect for a Chicago based startup specializing in language exchange and event management
+		\item Responsible for all aspects of technical development, securing Azure credits, full stack web development
+		\item Scaled up site to 5000 registered users and hundreds of events		
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	\begin{rSubsection}{ShipBob}{June 2023 - January 2024}{Software Engineer}{Chicago, IL}
+		\item Full stack software development. Working with ASP.NET web apis, and SQL server databases. I worked on a frontend Electron/Vue WMS (warehouse management system) application.		
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	\begin{rSubsection}{Socket Mobile}{February 2022 - May 2023}{Software Engineer}{Freemont, CA}
+		\item C\# SDK engineer supporting iOS, Android, and Windows platforms. Created MAUI Nuget package to widen platform support for our SDK. Utilized Bluetooth / BLE technology to communicate with custom data capture firmware..		
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	\begin{rSubsection}{Productive Edge}{June 2019 - October 2021}{Software Engineer}{Chicago, IL}
+		\item Lead software developer on a project to develop a ticket kiosk for a large NYC tourist attraction. Deployed CI leveraging Azure DevOps to allow new versions to be built and deployed in under 30 minutes. Added analytics and extensive unit and integration tests to ensure stability and track new client requests. Created infrastructure on Azure for hosting including utilizing Azure functions to reduce costs. Used MVVM application architecture to create an app for a new client with low development costs by keeping code reuse high and improving profit margins. 
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	\begin{rSubsection}{Audiogum}{August 2017 - June 2019}{Software Engineer}{Bristol, UK}	
+	\item	Using both native mobile (Swift, Java) and Xamarin technologies to build mobile applications for a new music streaming service. Created mobile applications released to both app stores. Wrote SDKs in both Java and Swift to allow 3rd party developers to leverage our AI music streaming platform.
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+	
+	\begin{rSubsection}{The Recurse Center}{September 2024 - Present}{Recurser}{New York, NY}
+		\item Spent time at the prestigious Recurse Center in New York. Worked on compilers to deepen my knowledge of computer science fundamentals. Worked with OCaml and functional languages.
+	\end{rSubsection}
+
+	\begin{rSubsection}{University of Birmingham}{September 2012 - September 2016}{ Theoretical Physics and Applied Mathematics MSci}{Birmingham, UK}
+		\item Dissertation: Hamiltonian of Multi-Particle Systems
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Miscellaneous}
+
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+		Skills & C\#, OCaml, Javascript, SQL, Tailwind, JQuery, Azure, Xamarin, MAUI, UWP, Vue, Electron \\
+		Spoken Languages & English, French \\
+		Presentations & \href{https://www.youtube.com/watch?v=KWGvgHQ_gB8}{ Trunk Based Development }
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
