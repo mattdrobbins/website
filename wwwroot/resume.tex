@@ -23,7 +23,7 @@
 
 \documentclass[
 	%a4paper, % Uncomment for A4 paper size (default is US letter)
-	11pt, % Default font size, can use 10pt, 11pt or 12pt
+	10pt, % Default font size, can use 10pt, 11pt or 12pt
 ]{resume} % Use the resume class
 
 \usepackage{ebgaramond} % Use the EB Garamond font
@@ -34,7 +34,7 @@
     linkcolor=blue,
     filecolor=magenta,      
     urlcolor=blue,
-    pdftitle={Overleaf Example},
+    pdftitle={Matthew Robbins},
     pdfpagemode=FullScreen,
     }
 \urlstyle{same}
@@ -44,19 +44,11 @@
 
 % You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
 % Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
-
-\address{535 E 14th Street, Apt 3A \\ New York, New York, 10009} % Main address
-\address{(312)~$\cdot$~515~$\cdot$~8790 \\ mattdrobbins@protonmail.com \\ \url{https://ttrobbins.com} } % Contact information
-
+\address{ \url{https://ttrobbins.com} \\ \href{mailto:mattdrobbins@protonmail.com}{mattdrobbins@protonmail.com} \\ \href{https://github.com/mattdrobbins}{https://github.com/mattdrobbins} }
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-\begin{center}
-\fontsize{20pt}{20pt}
-\href{https://github.com/mattdrobbins}{\faicon{github}} \ \ \
-\href{https://www.linkedin.com/in/matt-robbins-developer/}{\faicon{linkedin}} 
-\end{center}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -64,50 +56,62 @@
 
 \begin{rSection}{Experience}
 
-	\begin{rSubsection}{INTL Café}{January 2024 - Present}{CTO  \url{https://intlcafe.io}}{Chicago, IL}
-		\item Lead developer and sole architect for a Chicago based startup specializing in language exchange and event management
-		\item Responsible for all aspects of technical development, securing Azure credits, full stack web development
-		\item Scaled up site to 5000 registered users and hundreds of events		
+	\begin{rSubsection}{INTL Café - CTO - \url{https://intlcafe.io}}{January 2024 - Present}{}{Chicago, IL}
+		\item Solely responsible for the technical development and architecture of a language exchange and event management platform.
+		\item Secured and optimized Azure infrastructure, facilitating cost-effective and reliable cloud architecture.
+		\item Scaled the platform to accommodate 5,000+ registered users and managed hundreds of events, ensuring seamless performance and reliability.
 	\end{rSubsection}
 
 %------------------------------------------------
 
-	\begin{rSubsection}{ShipBob}{June 2023 - January 2024}{Software Engineer}{Chicago, IL}
-		\item Full stack software development. Working with ASP.NET web apis, and SQL server databases. I worked on a frontend Electron/Vue WMS (warehouse management system) application.		
+	\begin{rSubsection}{Full Stack Developer - ShipBob}{June 2023 - January 2024}{}{}
+		\item Developed and maintained full-stack applications, utilizing ASP.NET Web APIs and SQL Server databases to support backend functionality.
+		\item Contributed to the development of a frontend WMS application using Electron and Vue.js, enhancing UI/UX.
+		\item Collaborated with cross-functional teams to integrate backend and frontend systems, ensuring smooth and efficient operations.	
 	\end{rSubsection}
 
 %------------------------------------------------
 
-	\begin{rSubsection}{Socket Mobile}{February 2022 - May 2023}{Software Engineer}{Freemont, CA}
-		\item C\# SDK engineer supporting iOS, Android, and Windows platforms. Created MAUI Nuget package to widen platform support for our SDK. Utilized Bluetooth / BLE technology to communicate with custom data capture firmware..		
+	\begin{rSubsection}{C\# SDK Engineer - Socket Mobile}{February 2022 - May 2023}{}{}
+		\item Developed and supported SDKs for iOS, Android, and Windows platforms, focusing on Bluetooth/BLE communication with custom data capture firmware.
+		\item Created a MAUI NuGet package to expand platform support, enabling broader compatibility for the SDK across various environments.
 	\end{rSubsection}
 
 %------------------------------------------------
 
-	\begin{rSubsection}{Productive Edge}{June 2019 - October 2021}{Software Engineer}{Chicago, IL}
-		\item Lead software developer on a project to develop a ticket kiosk for a large NYC tourist attraction. Deployed CI leveraging Azure DevOps to allow new versions to be built and deployed in under 30 minutes. Added analytics and extensive unit and integration tests to ensure stability and track new client requests. Created infrastructure on Azure for hosting including utilizing Azure functions to reduce costs. Used MVVM application architecture to create an app for a new client with low development costs by keeping code reuse high and improving profit margins. 
+	\begin{rSubsection}{Software Engineer - Productive Edge}{June 2019 - October 2021}{}{}
+		\item Led the development of a ticket kiosk solution for a major NYC tourist attraction, ensuring high reliability and user engagement.
+		\item Implemented CI using Azure DevOps, reducing build and deployment times to under 30 minutes for new versions.
+		\item Enhanced product stability by adding analytics to monitor performance, extensive unit and integration tests, and Cucumber requirements to track client needs.
+		\item Contributed to several large scale projects developing and releasing mobile applications both internally and to the App Store.
+		\item Liaised with multiple clients to ensure requirements were consistently met and adjusted as needed. 
+		\item Provided reliable timelines and estimates to clients to keep costs and expectations predictable.
 	\end{rSubsection}
 
 %------------------------------------------------
 
-	\begin{rSubsection}{Audiogum}{August 2017 - June 2019}{Software Engineer}{Bristol, UK}	
-	\item	Using both native mobile (Swift, Java) and Xamarin technologies to build mobile applications for a new music streaming service. Created mobile applications released to both app stores. Wrote SDKs in both Java and Swift to allow 3rd party developers to leverage our AI music streaming platform.
-	\end{rSubsection}
+	\begin{rSubsection}{Mobile Application Developer - Audiogum}{August 2017 - June 2019}{}{}	
+	\item Developed and launched iOS and Android apps using Swift, Java, and Xamarin.
+	\item Created SDKs for third-party integration with the AI-powered music streaming platform and collaborated with teams to improve app features and stability.
+	\item Created extensive BDD specifications to ensure functionality was predictable and expected.
+\end{rSubsection}
+		
+	
+	\end{rSection}
 
-\end{rSection}
-
+	
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
 	
-	\begin{rSubsection}{The Recurse Center}{September 2024 - Present}{Recurser}{New York, NY}
-		\item Spent time at the prestigious Recurse Center in New York. Worked on compilers to deepen my knowledge of computer science fundamentals. Worked with OCaml and functional languages.
+	\begin{rSubsection}{The Recurse Center}{September 2024 - Present}{}{}
+		\item Created a compiler for Ocaml utilizing Microsoft's DLR to allow OCaml code to run on .NET. 
 	\end{rSubsection}
 
-	\begin{rSubsection}{University of Birmingham}{September 2012 - September 2016}{ Theoretical Physics and Applied Mathematics MSci}{Birmingham, UK}
-		\item Dissertation: Hamiltonian of Multi-Particle Systems
+	\begin{rSubsection}{University of Birmingham}{September 2012 - September 2016}{}{Birmingham, UK}
+		\item Theoretical Physics and Applied Mathematics MSci, Dissertation: Hamiltonian of Multi-Particle Systems.
 	\end{rSubsection}
 
 \end{rSection}
